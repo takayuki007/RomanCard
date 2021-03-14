@@ -1,4 +1,10 @@
 //***************************
+//base
+//***************************
+body{
+  font-family: 'M PLUS 1p', sans-serif;
+}
+//***************************
 //map
 //***************************
 $breakpoints: (
@@ -93,25 +99,29 @@ $breakpoints: (
 .mainView-title {
   color: white;
   position: absolute;
-  top: 320px;
-  left: 728px;
+  top: 30%;
+  left: 45%;
+  transform: translate(-30%, -45%);
   font-size: 48px;
 
   @include tb() {
-    top: 160px;
-    left: 264px;
+    top: 20%;
+    left: 45%;
+    transform: translate(-30%, -100%);
     font-size: 36px;
   }
   @include sp(){
     font-size: 24px;
-    top: 100px;
-    left: 100px;
+    top: 10%;
+    left: 30%;
+    transform: translate(-10%, -30%);
   }
 }
 .mainView-btn{
   position: absolute;
-  top: 492px;
-  left: 728px;
+  top: 50%;
+  left: 49%;
+  transform: translate(-49%, -50%);
   width: 384px;
   height: 48px;
   font-size: 18px;
@@ -125,14 +135,16 @@ $breakpoints: (
   }
 
   @include tb(){
-    top: 280px;
-    left: 240px;
+    top: 30%;
+    left: 35%;
+    transform: translate(-10%, -30%);
     width: 320px;
   }
   @include sp(){
     width: 220px;
-    top: 160px;
-    left: 84px;
+    top: 20%;
+    left: 28%;
+    transform: translate(-10%, -30%);
     font-size: 16px;
     height: 32px;
   }
@@ -173,6 +185,7 @@ $breakpoints: (
   @include sp(){
     font-size: 20px;
     margin-bottom: 24px;
+    text-align: center;
   }
 }
 .firstView-textSection_text{
